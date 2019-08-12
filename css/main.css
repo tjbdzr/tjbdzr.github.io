@@ -1637,6 +1637,7 @@ pre .javascript .function {
   margin: 0 auto;
   max-width: 120px;
   padding: 2px;
+  border-radius: 50%;
 }
 .site-author-name {
   color: #222;
@@ -1664,7 +1665,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffff61;
+  background: #d1ebff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2498,7 +2499,7 @@ ul.breadcrumb li+li:last-child {
   position: absolute;
 }
 .site-overview {
-  text-align: center;
+  text-align: left;
 }
 .site-author::before,
 .site-author::after {
@@ -2515,7 +2516,7 @@ ul.breadcrumb li+li:last-child {
 .chat {
   border-bottom: 1px dotted #ccc;
   border-top: 1px dotted #ccc;
-  text-align: left;
+  text-align: center;
 }
 .feed-link a,
 .chat a {
