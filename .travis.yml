@@ -7,7 +7,7 @@ node_js:
 
 branches: # 指定要构建的分支
   only: # only 表示只构建以下分支
-  - master
+  - hexo-source
 
 # 指定node_modules缓存，可选。缓存可加快编译速度
 cache:
