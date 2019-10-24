@@ -1,0 +1,46 @@
+# .tarvis.yml
+language: node_js # 指定语言环境
+node_js:
+  - stable # 指定 NodeJS 版本
+# dist: bionic  # 指定系统版本。如 bionic 是指 Ubuntu 18.04 发行版的名称
+# sudo: required # 是否需要 sudo 权限
+
+branches: # 指定要构建的分支
+  only: # only 表示只构建以下分支
+  - master
+
+# 指定node_modules缓存，可选。缓存可加快编译速度
+cache:
+  directories:
+    - node_modules
+
+# 构建之前安装 hexo-cli，因为接下来会用到
+before_install: 
+  # - source travis_env_init.sh # 可以执行指定的 shell 脚本来做初始化
+  # 全局安装 Hexo
+  - npm install -g hexo
+  # 全局安装 Hexo 命令行工具，因为我们是命令行操作
+  - npm install -g hexo-cli
+  
+
+# 在安装项目环境阶段需要运行的命令，一条一行，与上文 before_install 类似
+install:
+  # 安装 package.json 中的依赖
+  - npm install
+
+script: # 在构建阶段需要运行的命令，一条一行，类似的还有 before_script、after_script
+  - hexo clean
+  - hexo generate # Hexo 常规命令，执行清理和生成
+
+after_success: # 在构建成功后要运行的命令，构建失败不会执行，其他同上
+  # - hexo deploy > /dev/null # 通过 hexo 的 deploy 命令部署博客
+  - git init
+  - git config --global user.name "tjbdzr"
+  - git config --global user.email "tjbdzr@hotmail.com"
+  # 替换同目录下的_config.yml文件中gh_token字符串为travis后台刚才配置的变量，注意此处sed命令用了双引号。单引号无效！
+  # - sed -i "s/gh_token/${GH_TOKEN}/g" ./_config.yml
+  - sed -i "s/gh_token/${GH_TOKEN}/g" ./_config.yml
+  - hexo deploy
+
+notifications: # 设置通知项
+  email: false
