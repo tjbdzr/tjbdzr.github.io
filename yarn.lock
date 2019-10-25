@@ -1215,6 +1215,11 @@ hexo-generator-index@^0.2.1:
     hexo-pagination "0.0.2"
     object-assign "^4.0.1"
 
+hexo-generator-robotstxt@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.npm.taobao.org/hexo-generator-robotstxt/download/hexo-generator-robotstxt-0.2.0.tgz#e65a68659808904295f6ad99ebf6abbbeb6a32f2"
+  integrity sha1-5lpoZZgIkEKV9q2Z6/aru+tqMvI=
+
 hexo-generator-sitemap@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/hexo-generator-sitemap/download/hexo-generator-sitemap-1.2.0.tgz#3018f8d7d1e2e42b3f71a65a7316ffcf583bc3f3"
