@@ -98,25 +98,54 @@ theme_config:
     #commonweal: /404.html
   # Avatar
   avatar: 
-    url: "https://avatars2.githubusercontent.com/u/18515222?s=460&v=4"
+    url: "/images/avatar1.jpg"
     rounded: true
   # Social Icons
   social:
     GitHub: https://github.com/tjbdzr 
-    # 微博: https://weibo.com/jingaowen
+    微博: https://weibo.com/jingaowen
     知乎: http://zhihu.com/people/jingaowen
   # Fit Social Icons
   social_icons:
-    enable: true 
-    GitHub: github 
-    # 微博: weibo
-    知乎: zhihu
+    enable: true
+  # add site-subtitle to index page 
+  index_with_subtitle: false
+  # improve seo
+  seo: true
+  # comment system: gitalk
+  comments:
+    active: gitalk
+  gitalk:
+    enable: true
+    github_id: tjbdzr
+    repo: tjbdzr.github.io
+    client_id: 3f38e03a1dfe1130d0f0
+    client_secret: 11bd5b89cb7effd1c9db5fb887e70cdff9dbb953
+    admin_user: tjbdzr
+    create_issue_manually: false
+    distraction_free_mode: true
+    language: zh-CN
+
+# Creative Commons 4.0 International License.
+# https://creativecommons.org/share-your-work/licensing-types-examples
+# Available values: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+creative_commons:
+    license: by-nc-sa
+    sidebar: true
+    post: false
+
+# Wordcount display
+symbols_count_time:
+    symbols: true
+    time: true
+    total_symbols: true
+    total_time: true
 
 # Improve SEO
 sitemap: 
-    path: sitemap.xml
+  path: sitemap.xml
 baidusitemap:
-    path: baidusitemap.xml
+  path: baidusitemap.xml
 baidu_url_submit:
   count: 1 ## 提交最新的一个链接
   host:  jingaowen.com ## 在百度站长平台中注册的域名
