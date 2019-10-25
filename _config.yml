@@ -115,6 +115,10 @@ theme_config:
   # comment system: gitalk
   comments:
     active:
+  disqus:
+    enable: true
+    shortname: jingaowen
+    count: true
   gitalk:
     enable: false
     github_id: tjbdzr
@@ -137,7 +141,7 @@ theme_config:
 creative_commons:
     license: by-nc-sa
     sidebar: true
-    post: false
+    post: true
 
 # Wordcount display
 symbols_count_time:
