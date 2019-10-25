@@ -119,12 +119,17 @@ theme_config:
     enable: false
     github_id: tjbdzr
     repo: tjbdzr.github.io
+    comment_repo: tjbdzr.github.io
+    labels: ["comment"]
     client_id: 3f38e03a1dfe1130d0f0
     client_secret: 11bd5b89cb7effd1c9db5fb887e70cdff9dbb953
     admin_user: tjbdzr
     createIssueManually: false
     distraction_free_mode: true
     language: zh-CN
+owner: tjbdzr
+comment_repo: tjbdzr.github.io
+labels: ["comment"]
 
 # Creative Commons 4.0 International License.
 # https://creativecommons.org/share-your-work/licensing-types-examples
