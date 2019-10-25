@@ -116,13 +116,13 @@ theme_config:
   comments:
     active: gitalk
   gitalk:
-    enable: true
+    enable: false
     github_id: tjbdzr
     repo: tjbdzr.github.io
     client_id: 3f38e03a1dfe1130d0f0
     client_secret: 11bd5b89cb7effd1c9db5fb887e70cdff9dbb953
     admin_user: tjbdzr
-    create_issue_manually: false
+    createIssueManually: false
     distraction_free_mode: true
     language: zh-CN
 
