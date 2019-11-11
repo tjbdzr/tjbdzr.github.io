@@ -199,3 +199,5 @@ deploy:
   branch: master
 # deploy:
 #   type: baidu_url_submitter #暂不使用
+
+# This line added to prove commit user in git. Originally "Jin Gaowen" (family name ahead).
