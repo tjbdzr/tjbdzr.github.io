@@ -76,11 +76,22 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
+# compress images and lazy load
+imagemin:
+  enable     : true
+  interlaced : false
+  multipass  : false
+  optimizationLevel: 2
+  pngquant   : false
+  progressive: false
+lazysizes:
+  enable: true
+
 # Overriding Theme Config
 theme_config:
   scheme: Gemini
   font:
-    enable: true
+    enable: false
     # host: //fonts.lug.ustc.edu.cn
     global:
       # external: true
@@ -164,8 +175,8 @@ robotstxt:
   useragent: "*"
   disallow:
     - /vendors/
-    - /js/
-    - /css/
+    # - /js/
+    # - /css/
     - /fonts/
     - /vendors/
     - /fancybox/
